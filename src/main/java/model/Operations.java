@@ -1,7 +1,7 @@
 package model;
 
 /**
- * Clase para gestionar las operaciones matemáticas utilizadas en la integración numérica
+ * Clase para gestionar las operaciones matematicas utilizadas en la integracion numerica
  * @class Operations
  * @author Carolina Caceres
  */
@@ -12,7 +12,7 @@ public class Operations {
     public final static double ERROR = 0.00001;
 
     /**
-     * Método para calcular la integración numérica de la distribución t 
+     * Metodo para calcular la integracion numerica de la distribucion t 
      * @method NumericalIntegration
      * @param t T Distribution 
      * @return valor p integración numérica
@@ -31,7 +31,7 @@ public class Operations {
     }
 
     /**
-     * Método para calcular f(x) utilizando el proceso de integración numérica
+     * Metodo para calcular f(x) utilizando el proceso de integracion numerica
      * @method functionX
      * @param x
      * @param dof
@@ -48,7 +48,7 @@ public class Operations {
     }
 
     /**
-     * Método para calcular la función gamma del número entero
+     * Metodo para calcular la funcion gamma del numero entero
      * @method gamaFucntion
      * @param number
      * @return valor gama
@@ -61,7 +61,7 @@ public class Operations {
     }
 
     /**
-     * Método para calcular la función gamma del número doble
+     * Metodo para calcular la funcion gamma del numero doble
      * @method gamaFucntion
      * @param number
      * @return valor gama
@@ -74,7 +74,7 @@ public class Operations {
     }
 
     /**
-     * Método para calcular la función factorial del número
+     * Metodo para calcular la funcion factorial del numero
      * @method factorial
      * @param number
      * @return valor factorial

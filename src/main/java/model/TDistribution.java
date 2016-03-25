@@ -1,7 +1,7 @@
 package model;
 
 /**
- * Esta clase contiene a la distribución t de datos y resultados obtenidos mediante la integración numérica
+ * Esta clase contiene a la distribucion t de datos y resultados obtenidos mediante la integracion numerica
  * @class TDistribution
  * @author Carolina Caceres
  */
@@ -13,7 +13,7 @@ public class TDistribution {
     private int numSeg;
     //grado de libertad
     private int dof;
-    //resultado de la integración numética
+    //resultado de la integracion numerica
     private double p;
     //ancho del segmento
     private double widthSegment;
