@@ -15,7 +15,7 @@ public class Operations {
      * Metodo para calcular la integracion numerica de la distribucion t 
      * @method NumericalIntegration
      * @param t T Distribution 
-     * @return valor p integración numérica
+     * @return valor p integracion numerica
      */
     public static double NumericalIntegration(TDistribution t) {
         double valor = (t.getWidthSegment() / 3) * 1 * functionX(t.getxValue() * 0, t.getDof());

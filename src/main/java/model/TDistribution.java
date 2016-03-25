@@ -9,7 +9,7 @@ public class TDistribution {
     
     //segmento de valor x
     private double xValue;
-    //inúmero inicial de segmentos
+    //numero inicial de segmentos
     private int numSeg;
     //grado de libertad
     private int dof;

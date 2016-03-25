@@ -3,14 +3,14 @@ import model.Operations;
 import model.TDistribution;
 
 /**
- * clase para gestionar las operaciones para el cálculo de la integración numerica de la distribución T  
+ * clase para gestionar las operaciones para el calculo de la integracion numerica de la distribucion T  
  * @class  Controller
  * @author Carolina Caceres
  */
 public class Controller {
 
     /**
-     * Metodod que retorna la distribución T con el valor numérico de integracion p
+     * Metodo que retorna la distribucion T con el valor numerico de integracion p
      * @method IntegrationFunction
      * @param t TDistribution t
      * @return valor TDistribution t
