@@ -1,0 +1,92 @@
+package model;
+
+/**
+ * Clase para gestionar las operaciones matemáticas utilizadas en la integración numérica
+ * @class Operations
+ * @author Carolina Caceres
+ */
+public class Operations {
+
+    public final static double ZERO = 0;
+    public final static double MIDDLE = 0.5;
+    public final static double ERROR = 0.00001;
+
+    /**
+     * Método para calcular la integración numérica de la distribución t 
+     * @method NumericalIntegration
+     * @param t T Distribution 
+     * @return valor p integración numérica
+     */
+    public static double NumericalIntegration(TDistribution t) {
+        double valor = (t.getWidthSegment() / 3) * 1 * functionX(t.getxValue() * 0, t.getDof());
+        for (int i = 1; i < t.getNumSeg(); i++) {
+            if (i % 2 == 0) {
+                valor = valor + (t.getWidthSegment() / 3) * 2 * functionX(t.getWidthSegment() * i, t.getDof());
+            } else {
+                valor = valor + (t.getWidthSegment() / 3) * 4 * functionX(t.getWidthSegment() * i, t.getDof());
+            }
+        }
+        valor = valor + (t.getWidthSegment() / 3) * 1 * functionX(t.getxValue(), t.getDof());
+        return valor;
+    }
+
+    /**
+     * Método para calcular f(x) utilizando el proceso de integración numérica
+     * @method functionX
+     * @param x
+     * @param dof
+     * @return valor f(x)
+     */
+    public static double functionX(double x, int dof) {
+        double fx;
+        double x1 = 1 + ((Math.pow(x, 2)) / dof);
+        double exp = (double) (dof + 1) / 2;
+        x1 = Math.pow(x1, -exp);
+        double x2 = gamaFucntion(exp) / (Math.pow(dof * Math.PI, MIDDLE) * gamaFucntion((double) dof / 2));
+        fx = x2 * x1;
+        return fx;
+    }
+
+    /**
+     * Método para calcular la función gamma del número entero
+     * @method gamaFucntion
+     * @param number
+     * @return valor gama
+     */
+    public static int gamaFunction(int number) {
+        if (number > 0) {
+            number--;
+        }
+        return (int) factorial(number);
+    }
+
+    /**
+     * Método para calcular la función gamma del número doble
+     * @method gamaFucntion
+     * @param number
+     * @return valor gama
+     */
+    public static double gamaFucntion(double number) {
+        if (number > 0) {
+            number--;
+        }
+        return factorial(number);
+    }
+
+    /**
+     * Método para calcular la función factorial del número
+     * @method factorial
+     * @param number
+     * @return valor factorial
+     */
+    public static double factorial(double number) {
+        if (number == ZERO) {
+            return 1.0;
+        } else if (number == MIDDLE) {
+            return number * Math.sqrt(Math.PI);
+        } else {
+            return number * factorial(number - 1);
+        }
+    }
+
+}
