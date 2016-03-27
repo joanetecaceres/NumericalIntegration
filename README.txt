@@ -15,3 +15,7 @@ $ heroku local web
 
 To access the application on heroku go to the following link:
 https://frozen-inlet-79465.herokuapp.com/NumericalIntegration
+
+##Javadoc
+Tarea5\target\site\apidocs
+
