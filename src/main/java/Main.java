@@ -13,13 +13,13 @@ import static spark.Spark.get;
 
 /**
  * Esta clase administra la vista de la pagina y muestra los resultados de los casos de prueba
- * @class  Main
+ * Clase  Main
  * @author Carolina Caceres
  */
 public class Main {
 
     /**
-     * @method main 
+     * Metodo main 
      */
     public static void main(String[] args) {
 

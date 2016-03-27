@@ -2,7 +2,7 @@ package model;
 
 /**
  * Clase para gestionar las operaciones matematicas utilizadas en la integracion numerica
- * @class Operations
+ * Clase Operations
  * @author Carolina Caceres
  */
 public class Operations {
@@ -13,9 +13,9 @@ public class Operations {
 
     /**
      * Metodo para calcular la integracion numerica de la distribucion t 
-     * @method NumericalIntegration
-     * @param t T Distribution 
-     * @return valor p integracion numerica
+     * Metodo NumericalIntegration
+     * Parametro t T Distribution 
+     * Retorna valor p integracion numerica
      */
     public static double NumericalIntegration(TDistribution t) {
         double valor = (t.getWidthSegment() / 3) * 1 * functionX(t.getxValue() * 0, t.getDof());
@@ -32,10 +32,10 @@ public class Operations {
 
     /**
      * Metodo para calcular f(x) utilizando el proceso de integracion numerica
-     * @method functionX
-     * @param x
-     * @param dof
-     * @return valor f(x)
+     * Metodo functionX
+     * Parametro x
+     * Parametro dof
+     * Retorna valor f(x)
      */
     public static double functionX(double x, int dof) {
         double fx;
@@ -49,9 +49,9 @@ public class Operations {
 
     /**
      * Metodo para calcular la funcion gamma del numero entero
-     * @method gamaFucntion
-     * @param number
-     * @return valor gama
+     * Metodo gamaFucntion
+     * Parametro number
+     * Retorna valor gama
      */
     public static int gamaFunction(int number) {
         if (number > 0) {
@@ -62,9 +62,9 @@ public class Operations {
 
     /**
      * Metodo para calcular la funcion gamma del numero doble
-     * @method gamaFucntion
-     * @param number
-     * @return valor gama
+     * Metodo gamaFucntion
+     * Parametro number
+     * Retorna valor gama
      */
     public static double gamaFucntion(double number) {
         if (number > 0) {
@@ -75,9 +75,9 @@ public class Operations {
 
     /**
      * Metodo para calcular la funcion factorial del numero
-     * @method factorial
-     * @param number
-     * @return valor factorial
+     * Metodo factorial
+     * Parametro number
+     * Retorna valor factorial
      */
     public static double factorial(double number) {
         if (number == ZERO) {

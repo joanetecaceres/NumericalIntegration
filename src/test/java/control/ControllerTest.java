@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 
 /**
  * Clase de prueba
- * @class  ControllerTest
+ * Clase  ControllerTest
  * @author Carolina Caceres
  */
 public class ControllerTest {

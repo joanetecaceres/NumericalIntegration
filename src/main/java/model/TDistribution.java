@@ -2,7 +2,7 @@ package model;
 
 /**
  * Esta clase contiene a la distribucion t de datos y resultados obtenidos mediante la integracion numerica
- * @class TDistribution
+ * Clase TDistribution
  * @author Carolina Caceres
  */
 public class TDistribution {
@@ -21,96 +21,96 @@ public class TDistribution {
     private double errorValue;
 
     /**
-     * @method getxValue
-     * @return xValue
+     * Metodo getxValue
+     * Retorna xValue
      */
     public double getxValue() {
         return xValue;
     }
 
     /**
-     * @method setxValue
-     * @param xValue
+     * Metodo setxValue
+     * Parametro xValue
      */
     public void setxValue(double xValue) {
         this.xValue = xValue;
     }
 
     /**
-     * @method getNumSeg
-     * @return numSeg
+     * Metodo getNumSeg
+     * Retorna numSeg
      */
     public int getNumSeg() {
         return numSeg;
     }
 
     /**
-     * @method setNumSeg 
-     * @param numSeg
+     * Metodo setNumSeg 
+     * Parametro numSeg
      */
     public void setNumSeg(int numSeg) {
         this.numSeg = numSeg;
     }
 
     /**
-     * @method getDof
-     * @return dof
+     * Metodo getDof
+     * Retorna dof
      */
     public int getDof() {
         return dof;
     }
 
     /**
-     * @method setDof
-     * @param dof
+     * Metodo setDof
+     * Parametro dof
      */
     public void setDof(int dof) {
         this.dof = dof;
     }
 
     /**
-     * @method getP
-     * @return p
+     * Metodo getP
+     * Retorna p
      */
     public double getP() {
         return p;
     }
 
     /**
-     * @method setP
-     * @param p
+     * Metodo setP
+     * Parametro p
      */
     public void setP(double p) {
         this.p = p;
     }
 
     /**
-     * @method getWidthSegment
-     * @return widthSegment
+     * Metodo getWidthSegment
+     * Retorna widthSegment
      */
     public double getWidthSegment() {
         return widthSegment;
     }
 
     /**
-     *@method setWidthSegment
-     * @param widthSegment
+     *Metodo setWidthSegment
+     * Parametro widthSegment
      */
     public void setWidthSegment(double widthSegment) {
         this.widthSegment = widthSegment;
     }
 
     /**
-     * @mehtod getErrorValue
-     * @return errorValue
+     * Metodo getErrorValue
+     * Retorna errorValue
      */
     public double getErrorValue() {
         return errorValue;
     }
 
     /**
-     * @mehtod setErrorValue
-     * @param errorValue
+     * Metodo setErrorValue
+     * Parametro errorValue
      */
     public void setErrorValue(double errorValue) {
         this.errorValue = errorValue;

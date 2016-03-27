@@ -4,16 +4,16 @@ import model.TDistribution;
 
 /**
  * clase para gestionar las operaciones para el calculo de la integracion numerica de la distribucion T  
- * @class  Controller
+ * Clase  Controller
  * @author Carolina Caceres
  */
 public class Controller {
 
     /**
      * Metodo que retorna la distribucion T con el valor numerico de integracion p
-     * @method IntegrationFunction
-     * @param t TDistribution t
-     * @return valor TDistribution t
+     * Metodo IntegrationFunction
+     * Parametro t TDistribution t
+     * Retorna valor TDistribution t
      */
     public static TDistribution IntegrationFunction(TDistribution t) {
         double valor1 = Operations.NumericalIntegration(t);
